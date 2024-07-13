@@ -1,12 +1,8 @@
 <?php
-// $servername="Localhost";
-// $Username="id20956789_admin";
-// $password="Sixty@database1230";
-// $databasename="id20956789_info";
-$servername="Localhost";
-$Username="root";
-$password="";
-$databasename="info";
+$servername="your_server_name";
+$Username="your_user_name";
+$password="your_password";
+$databasename="your_database_name";
 
 $conn=mysqli_connect($servername,$Username,$password,$databasename);
 if(!$conn){
