@@ -1,0 +1,233 @@
+body{
+  background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth; /* Safari and Chrome */
+  -moz-scroll-behavior: smooth; /* Firefox */
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/*info...start*/
+.infotoclick{
+  text-align: center;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+/*info...end*/
+/*---buttons design start--- */
+  #buttons{
+    height:200px;
+    width:100%;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    display:flex;
+    justify-content:center;
+    margin-bottom:none;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+   
+  }
+  #sec1btn,#sec2btn {
+    width: 18vw;
+    height: 9vh;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #sec1btn:hover,#sec2btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+    background: #315cfd;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  #sec1btn:active,#sec2btn:active {
+    opacity: 0.5;
+  }
+/*---buttons design end---*/
+/*---pic design start---*/ 
+#section-1,#section-2{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius:5%;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden;
+  height:80vh;
+  width:75vw;
+  display:none;
+}
+/*---pic design end---*/
+/*---form design start---*/
+#ortxt{
+  font-size:40px;
+  font-weight:bolder;
+text-align: center;
+margin-top:10px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 300px;
+  --height-of-input: 60px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+  margin-top:50px;
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+#search{
+  padding-left:40.5%;
+  
+}
+/*--form design ends---*/
+/* --submitform buttons design-- */
+#formbuttons{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height : 325px;
+}
+
+.cssbuttons-io-button {
+  background: #A370F0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 3.8em;
+  width: 9%;
+  padding-right: 3.3em;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* submitform button design end  */

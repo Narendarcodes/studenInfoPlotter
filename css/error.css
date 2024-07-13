@@ -1,0 +1,40 @@
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+html,body{
+    background: black;
+    height:100%;
+    width:100%;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phone{
+    height:60px;
+    width:40px;
+    border-radius:10px;
+    border:3px solid white;
+    display:flex;
+    justify-content: center;
+    animation:rotate 1.5s ease-in-out infinite alternate;
+}
+.camera{
+    height:2px;
+    width:6px;
+    background-color:white;
+    border-radius:30%;
+   
+}
+.message{
+    color:white;
+}
